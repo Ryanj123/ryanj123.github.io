@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple JavaScript Example</title>
+  </head>
+  <body>
+    <p id="demo">Click the button to change me.</p>
+    <button id="myButton">Click Me</button>
+
+    <script>
+      // Get references to the HTML elements
+      const demoText = document.getElementById("demo");
+      const button = document.getElementById("myButton");
+
+      // Add a click event handler to the button
+      button.addEventListener("click", function () {
+        demoText.innerHTML = "Text changed!";
+      });
+    </script>
+  </body>
+</html>
